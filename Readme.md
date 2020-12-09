@@ -15,11 +15,19 @@ docker run -p 8050:8050 scrapinghub/splash
 
 ### 运行爬虫
 
+#### 进行单次爬虫
+
+``` shell
+scrapy crawl ticket
+```
+
+#### 以定时的方式运行爬虫
+
 ``` python
 python3 main.py
 ```
 
-结果保存在 ```result.json``` 中
+结果保存在 ```result``` 文件夹中
 
 ## 实现方案
 原方案

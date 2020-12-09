@@ -6,12 +6,14 @@
 
 # useful for handling different item types with a single interface
 import json
+from datetime import datetime
 
 
 class CorePipeline:
     def __init__(self):
         # python3保存文件 必须需要'wb' 保存为json格式
-        self.f = open("result.json", 'wb')
+        today = datetime.now().strftime('%Y-%m-%d')
+        self.f = open(f"result/{today}.json", 'wb')
         self.item_list = []
 
     def process_item(self, item, spider):

@@ -90,6 +90,6 @@ ITEM_PIPELINES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # SPLASH Setting
-SPLASH_URL = 'http://your-splash-server:8050'
+SPLASH_URL = 'http://106.15.74.187:8050'
 
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
